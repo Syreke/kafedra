@@ -42,7 +42,7 @@ public class PrepodController {
     public String allPrepods2(Model model) {
         List<Prepod> prepods = (List<Prepod>) prepodRepository.findAll();
         model.addAttribute("prepods", prepods);
-        return "prepods";
+        return "prepod";
     }
 
     @RequestMapping(value = "/deletePrepod", method = RequestMethod.GET)
