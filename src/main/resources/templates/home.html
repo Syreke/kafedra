@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.springframework.org/schema/jdbc">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+
+    <title>КазНИТУ</title>
+    <script th:src = "@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
 </head>
 <body>
+<div class="container">
+    <h3 class=""><a th:href="@{/student/add}">Add Student</a></h3>
 
+</div>
 </body>
 </html>
