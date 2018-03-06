@@ -7,9 +7,23 @@
     <script th:src = "@{/js/bootstrap.min.js}"></script>
     <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
 </head>
+<style>
+    body{
+        background-color: #4e555b;
+    }
+    a{
+        text-decoration: none;
+        color:greenyellow;
+    }
+
+
+</style>
 <body>
-<div class="container">
-    <h3 class=""><a th:href="@{/student/add}">Add Student</a></h3>
+<div class="container" style="text-align: center">
+
+    <h1 class=""><a th:href="@{/student/add}">Add Student</a></h1>
+    <br>
+    <h1 class=""><a th:href="@{/demo/add}">Add Teacher</a></h1>
 
 </div>
 </body>
