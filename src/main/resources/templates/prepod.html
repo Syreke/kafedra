@@ -14,11 +14,13 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>email</th>
+                <th>Kafedra</th>
             </tr>
             <tr th:each = "prepod : ${prepods}">
                 <td th:text = "${prepod.firstName}">test</td>
                 <td th:text = "${prepod.lastName}">test</td>
                 <td th:text = "${prepod.email}">test</td>
+                <td th:text = "${prepod.kafedra}">test</td>
                 <td> <a href = '/demo/add'>Add</a></td>
                 <td> <a th:href="@{'/demo/editPrepod?id='+${prepod.id}}">Edit</a></td>
                 <td> <a th:href = "@{'/demo/deletePrepod?id='+${prepod.id}}">Delete</a></td>

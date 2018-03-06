@@ -13,13 +13,15 @@ public class Prepod {
     private String firstName;
     private String lastName ;
     private String email ;
+    private String kafedra;
 
     public Prepod(){}
 
-    public Prepod(String firstName, String lastName, String email) {
+    public Prepod(String firstName, String lastName, String email, String kafedra) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.kafedra=kafedra;
     }
 
     public long getId() {
@@ -52,5 +54,13 @@ public class Prepod {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getKafedra() {
+        return kafedra;
+    }
+
+    public void setKafedra(String kafedra) {
+        this.kafedra = kafedra;
     }
 }

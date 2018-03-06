@@ -57,6 +57,7 @@ public class PrepodController {
         prepod1.setFirstName(prepod.getFirstName());
         prepod1.setLastName(prepod.getLastName());
         prepod1.setEmail(prepod.getEmail());
+        prepod1.setKafedra(prepod.getKafedra());
         prepodRepository.save(prepod1);
         return "redirect:/demo/all2";
     }
